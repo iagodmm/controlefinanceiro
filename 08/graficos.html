@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos de Transações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Gráficos de Transações</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="adicionar-gastos.html">Adicionar Gasto</a></li>
+            <li><a href="tabela-gastos.html">Tabela Completa</a></li>
+            <li><a href="#graficos" class="active">Gráficos</a></li>
+            <li><a href="contas-bancarias.html">Contas Bancárias</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <section id="graficos" class="section">
+            <h2>Gráficos</h2>
+            <div>
+                <h3>Transações Diárias</h3>
+                <canvas id="grafico-diario"></canvas>
+            </div>
+            <div>
+                <h3>Transações Mensais</h3>
+                <canvas id="grafico-mensal"></canvas>
+            </div>
+            <div>
+                <h3>Total por Categoria</h3>
+                <canvas id="grafico-total"></canvas>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>© 2025 Registro de Gastos. Todos os direitos reservados.</p>
+        <p>Data atual: 06 de Março de 2025</p>
+    </footer>
+    <script src="script-graficos.js"></script>
+</body>
+</html>
